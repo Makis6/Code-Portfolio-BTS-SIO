@@ -1,0 +1,264 @@
+/* polices */
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Merriweather&family=Overpass&family=Roboto:wght@300;400&display=swap');
+
+/* layout */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(245, 255, 255);
+    background: url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+}
+
+nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+nav .profile h1 {
+    margin-left: 10px;
+    font-size: 20px;
+    margin-right: 30px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+nav .profile h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+
+nav ul li {
+    padding: 20px 42px 20px 42px;
+    cursor: pointer;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: rgb(0, 0, 100);
+    color: whitesmoke;
+    transition: ease all 0.5s;
+    transition-property: all;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* définition BTS SIO */ 
+
+.def h1 {
+    position: relative;
+    animation: 2s slidein-top, 2s fadein;
+    margin: 4%;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    color: orange;
+    font-family:'Overpass', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.def p {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    margin-top: -40px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.def p span {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Option SLAM */ 
+
+.SLAM img {
+    margin-top: 4%;
+    margin-left: 55%;
+    margin-right: 0;
+    max-width: 40%;
+    height: 60%;
+    border: 2px solid gray;
+    padding: 0;
+}
+
+.SLAM h1 {
+    position: relative;
+    animation: 3s slidein-left, 3s fadein;
+    margin: 20%;
+    margin-top: -28%;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2vw;
+    font-family:'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+.SLAM p {
+    margin-left: 6%;
+    margin-right:50%;
+    margin-top: -18%;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.SLAM li {
+    display:flex;
+    margin-bottom: 1%;
+    margin-left: 8%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* Option SISR */
+ 
+.SISR {
+    margin-bottom: 100px;
+}
+
+.SISR img {
+    margin-right: 55%;
+    margin-left: 4%;
+    margin-top: 15%;
+    max-width: 40%;
+    height: 100%;
+    border: 2px solid gray;
+    padding: 0;
+}
+
+.SISR h1 {
+    position: relative;
+    animation: 4s slidein-right, 4s fadein;
+    margin: 20%;
+    margin-left: 66%;
+    margin-top: -25%;
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2vw;
+    font-family:'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+.SISR p {
+    margin-left: 50%;
+    margin-right:6%;
+    margin-top: -18%;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.SISR li {
+    display:flex;
+    margin-bottom: 1%;
+    margin-left: 52%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+/* pied de page */
+
+.pied {
+    background-color: black;
+    padding: 5.5px;
+    margin-top: 40px;
+}
+
+.pied p {
+    text-align: center;
+    color: white;
+}
+
+
+@keyframes slidein-top {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slidein-left {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slidein-right {
+    0% {
+        right: -10%;
+    }
+    100% {
+        right: 0;
+
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
